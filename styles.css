@@ -377,6 +377,32 @@ a {
   transform-origin: right center;
 }
 
+.instagram-symbol {
+  width: 26px;
+  height: 26px;
+  border: 2px solid currentColor;
+  border-radius: 8px;
+}
+
+.instagram-symbol::before {
+  position: absolute;
+  inset: 6px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  content: "";
+}
+
+.instagram-symbol::after {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: currentColor;
+  content: "";
+}
+
 .work-signal-row {
   margin-top: 18px;
 }
